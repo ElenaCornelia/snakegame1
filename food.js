@@ -14,7 +14,6 @@ export function update(){
 
 export function draw(gameBoard) {
   let foodElement = document.createElement('img'); // Creează un element de tip imagine
-  foodElement.src = '/food.png'; // Adaugă calea către imaginea pe care dorești să o folosești
   foodElement.style.gridRowStart = food.y;
   foodElement.style.gridColumnStart = food.x;
   foodElement.classList.add('food');
