@@ -13,13 +13,13 @@ export function update(){
 }
 
 export function draw(gameBoard) {
-  let foodElement = document.createElement('img'); // Creează un element de tip imagine
-  foodElement.src = '/food.png'; // Adaugă calea către imaginea pe care dorești să o folosești
+  let foodElement = document.createElement('img'); 
+  foodElement.src = '/food.png'; 
   foodElement.style.gridRowStart = food.y;
   foodElement.style.gridColumnStart = food.x;
   foodElement.classList.add('food');
-  foodElement.style.width = '40px'; // Specifică lățimea dorită
-  foodElement.style.height = '40px'; // Specifică înălțimea dorită
+  foodElement.style.width = '40px';
+  foodElement.style.height = '40px'; 
   gameBoard.appendChild(foodElement);
 }
 
